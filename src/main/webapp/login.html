@@ -1589,7 +1589,7 @@
 <!--<div class="top-line"></div>-->
 
 <script src="./concert/js/fp.js" type="text/javascript"></script>
-<script src="./concert/js/register-min.js.下载" type="text/javascript"></script>
+<script src="./concert/js/register-min.js" type="text/javascript"></script>
 
 <link type="text/css" href="./concert/css/nc.css" rel="stylesheet" disabled="">
 <script type="text/javascript" src="./concert/js/nc.js"></script>
@@ -1653,15 +1653,15 @@
                 <li id="QRCodebtn"><a href="javascript:void(0)"><span class="m_ewm_pic1"></span>二维码登录</a></li>
                 <li id="MsgLogin"><a href="javascript:void(0)"><span class="m_message_pic1"></span>短信快捷登录</a></li>
             </ul>
+
             <form id="dlform" name="dlform" method="post">
                 <input name="token" id="token" type="hidden">
                 <input name="nationPerfix" id="nationperfix" type="hidden">
-                <div class="account_box">
 
+                <div class="account_box">
                     <ul class="account_list pt30" id="form_inputs">
                         <li style="margin-bottom:0">
-                            <div id="m_account" class="account_inner w_378 m_phone"
-                                 style="position:relative; z-index:1114;">
+                            <div id="m_account" class="account_inner w_378 m_phone" style="position:relative; z-index:1114;">
                                 <p class="c2 pt10" id="tishi1" style="display:none;">验证即登录，未注册将自动创建大麦网账号</p>
                                 <span class="account_email"></span>
                                 <div id="box" style="display:none;">
@@ -1695,6 +1695,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--手机号-->
                                 <label for="login_email"
                                        style="position: absolute; top: 4px; left: 10px; cursor: text; color: rgb(195, 195, 195); font-size: 14px; line-height: 27px; z-index: 0;"></label><input
                                     type="text" class="text layer_text" name="login_email" id="login_email"
@@ -1709,6 +1711,8 @@
                             <li>
                                 <div class="account_inner" style="z-index: 2; position: relative;">
                                     <span class="account_password"></span>
+
+                                    <!--密码-->
                                     <label for="undefined"
                                            style="display: none; position: absolute; top: 4px; left: 10px; cursor: text; color: rgb(195, 195, 195); font-size: 14px; line-height: 27px; z-index: 0;"></label><input
                                         type="text" id="login_pwd_txt" class="text layer_text" value="登录密码"
@@ -1737,6 +1741,8 @@
                             <li>
                             </li>
                         </ul>
+
+                        <!--登陆-->
                         <input id="subbtn" type="button" class="login_btn" value="立即登录" onclick="FrSubmit();">
                     </div>
 
@@ -1755,7 +1761,7 @@
                                     </div>
 
 						  <span class="code_img" style=" width:165px; height:165px;">
-							<img width="165" height="165" id="QRCodeImg" src="./login/VerifyShow.aspx" alt="">
+							<img width="165" height="165" id="QRCodeImg" src="./concert/VerifyShow.aspx" alt="">
 						  </span>
                                     <p class="code_change">
                                         <a href="javascript:void(0)" onclick="RefreshQRCode()">刷新一下</a>
@@ -1833,7 +1839,7 @@
                                         style="width: 160px; float: left;">
                                     <strong class="account_icon" style="display:none;"></strong>
                                 </div>
-					    <span class="account_img">
+                                <span class="account_img">
 							<img id="mImg" src="./concert/VerifyShow(1).aspx"
                                  onclick="this.src=&#39;/VerifyShow.aspx?d=&#39;+new Date().toLocaleString()" alt=""
                                  width="96" height="45">
@@ -1842,12 +1848,15 @@
                                    onclick="document.getElementById(&#39;mImg&#39;).src=&#39;/VerifyShow.aspx?d=&#39;+new Date().toLocaleString()">换一换</a>
                             </li>
                         </ul>
+
                         <input type="button" id="msgBtn" class="login_btn" value="立即登录">
+
                     </div>
 
 
                 </div>
             </form>
+
             <p id="account_txt" class="account_txt mt5">
                 <a href="https://secure.damai.cn/reg.aspx" target="_parent" class="c4 ml10">立即注册</a>
                 <a href="https://secure.damai.cn/SeekPsd.aspx" class="fl">忘记密码？</a>
