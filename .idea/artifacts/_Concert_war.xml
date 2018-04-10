@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_Concert:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="com.concert.war">
+      <element id="artifact" artifact-name="_Concert:war exploded" />
+    </root>
+  </artifact>
+</component>
